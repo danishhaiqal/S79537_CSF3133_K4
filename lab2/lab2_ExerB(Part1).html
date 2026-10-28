@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <title>Course Feedback</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>CSF3133 Course Feedback</h1>
+        </header> <!-- Error 1 (Line 10): Wrong use </head> -->
+        <nav>
+            <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+        </nav>
+        <section id="results">
+            <h2>Feedback Summary</h2>
+            <table> <!-- Error 2 (Line 16): table border="1" in CSS -->
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Rating</th> <!-- Error 3 (Line 20): Wrong use <td> and </td> -->
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML</td>
+                    <td>4.5</td>
+                </tr> <!-- Error 4 (Line 26): Missing </tr> -->
+                <tr>
+                    <td>2</td>
+                    <td colspan="2">Tables and Forms</td> <!-- Error 5 (Line 28): Out of range -->
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Semantic HTML</td> <!-- Error 6 (Line 32): Missing </td> -->
+                    <td>4.0</td>
+                </tr>
+            </table>
+        </section>
+        <section id="form">
+            <h2>Give Your Feedback</h2>
+            <form action="submit_feedback.php" method="post">
+                <label for="fullname">Name:</label> <!-- Error 7 (Line 39): value of for must same with id -->
+                <input type="text" id="fullname" name="name"><br>
+                <label>Overall rating:</label><br>
+                <input type="radio" id="good" name="good" value="good">
+                <label for="good">Good</label>
+                <input type="radio" id="poor" name="poor" value="poor">
+                <label for="poor">Poor</label><br>
+                <input type="checkbox" id="lab" name="lab" value="yes">
+                <label for="labs">I attended all labs</label><br>
+                <input type="submit" id="labs" value="Submit"> <!-- Error 8 (Line 48): Missing id -->
+            </form> <!-- Error 9 (Line 49) Wrong spelling </form> --> 
+        </section>
+        <footer>
+            <a href="lab2_ExerB(Part2).html">Next Page</a>
+            <p>Copyright &copy; 2026 CSF3133</p> <!-- Error 10 (Line 52): Missing semicolon after &copy -->
+        </footer>
+    </body>
+</html>

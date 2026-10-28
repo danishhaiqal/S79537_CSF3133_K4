@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Course Feedback</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>CSF3133 Course Feedback</h1>
+        </header>
+
+        <nav>
+            <a href="#results">Results</a> |
+            <a href="#form">Feedback Form</a> |
+            <a href="#comments">Student Comments</a>
+        </nav>
+
+        <section id="results">
+            <h2>Feedback Summary</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Rating</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML</td>
+                    <td>4.5</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Tables and Forms</td>
+                    <td>4.0</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Semantic HTML</td>
+                    <td>4.0</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td rowspan="2">Mini Project</td>
+                    <td>4.5</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>4.5</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Average Rating</td>
+                    <td>4.3</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>Give Your Feedback</h2>
+
+            <form action="submit_feedback.php" method="post">
+
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="name">
+                <br>
+
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email">
+                <br>
+
+                <label>Overall rating:</label>
+                <br>
+
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">Good</label>
+
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Average</label>
+
+                <input type="radio" id="poor" name="rating" value="poor">
+                <label for="poor">Poor</label>
+                <br>
+
+                <p>Topics I want more practice on:</p>
+
+                <input type="checkbox" id="html" name="topics" value="html">
+                <label for="html">HTML</label>
+                <br>
+
+                <input type="checkbox" id="tables" name="topics" value="tables">
+                <label for="tables">Tables and Forms</label>
+                <br>
+
+                <input type="checkbox" id="semantic" name="topics" value="semantic">
+                <label for="semantic">Semantic HTML</label>
+                <br>
+
+                <label for="section">Section/Group:</label>
+
+                <select id="section" name="section">
+                    <option value="section1">Section 1</option>
+                    <option value="section2">Section 2</option>
+                    <option value="section3">Section 3</option>
+                </select>
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+        <section id="comments">
+            <h2>Student Comments</h2>
+
+            <article>
+                <h3>Ali</h3>
+                <p>The course was easy to follow and the practical exercises were helpful.</p>
+            </article>
+
+            <article>
+                <h3>Siti</h3>
+                <p>I enjoyed learning HTML and would like more practice with forms.</p>
+            </article>
+
+        </section>
+
+        <footer>
+            <p>Copyright &copy; 2026 CSF3133</p>
+        </footer>
+
+    </body>
+</html>
