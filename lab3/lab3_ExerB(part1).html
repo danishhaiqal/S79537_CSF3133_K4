@@ -1,0 +1,58 @@
+
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html> <!-- Error 1 (Line 1): missing html -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ticket Booking</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>e-Ticket <span>Your Campus Cinema</span></h1> <!-- Error 2 (Line 9): Incorrect <h1> and <span> closing order -->
+    </div>
+        <div id="content"> <!-- Error 3 (Line 11): <span id="content"> wraps block elements -->
+            <h2>Book Your Ticket</h2>
+            <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p> <!-- Error 4 & 5 (Line 13): < is used as a text character and &amp is missing semicolon -->
+            <form action="booking.php" oninput="total.value = adult.value + child.value">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br> <!-- Error 6 (Line 18): type="emial" is misspelled -->
+                <label for="date">Show date:</label>
+                <input type="date" id="date" name="date"><br>
+                <label for="movie">Movie:</label>
+                <input id="movie" name="movie" list="movielist"><br> <!-- Error 7 (Line 22): list="movies" does not match datalist ID -->
+                <datalist id="movielist">
+                    <option value="Space Rangers">
+                    <option value="Kampung Comedy">
+                </datalist>
+                <label for="adult">Adult tickets:</label>
+                <input type="number" id="adult" name="adult" value="0"><br>
+                <label for="child">Child tickets:</label>
+                <input type="number" id="child" name="child" value="0"><br>
+                <label for="rating">Rate our service:</label>
+                <input type="range" id="rating" name="rating" min="1" max="5"><br> <!-- Error 8 (Line 32): Range slider has reversed minimum and maximum -->
+                Total tickets: <output name="total" for="adult child"></output><br> <!-- Error 9 (Line 33): for="adult kid" uses the wrong field name -->
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+        <div id="footer">
+            <p>&copy; 2026 CineKampus. All rights reserved.</p> <!-- Error 10 (Line 38): list="movies" does not match datalist ID -->
+        </div>
+    </body>
+    <!-- Error 11 & 12 (Line 38): duplicate closing </html> and </body> -->
+</html>
+
+<!-- Error 1 (Line 1): missing html -->
+<!-- Error 2 (Line 9): Incorrect <h1> and <span> closing order -->
+<!-- Error 3 (Line 11): <span id="content"> wraps block elements -->
+<!-- Error 4 & 5 (Line 13): < is used as a text character and &amp is missing semicolon -->
+<!-- Error 6 (Line 18): type="emial" is misspelled -->
+<!-- Error 7 (Line 22): list="movies" does not match datalist ID -->
+<!-- Error 8 (Line 32): Range slider has reversed minimum and maximum -->
+<!-- Error 9 (Line 33): for="adult kid" uses the wrong field name -->
+<!-- Error 10 (Line 38): list="movies" does not match datalist ID -->
+<!-- Error 11 & 12 (Line 38): duplicate closing </html> and </body> -->
