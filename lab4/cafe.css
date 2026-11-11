@@ -1,0 +1,87 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 11 Nov 2026, 4:55:46 pm
+    Author     : User
+*/
+/* Navigation Bar Styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #1A5276;
+  overflow: hidden;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  padding: 12px 20px;
+  background-color: #1A5276;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Link States in Correct Order (link -> visited -> hover -> active) */
+a:link {
+  color: #1A5276;
+}
+
+a:visited {
+  color: #7D3C98;
+}
+
+a:hover, ul li a:hover {
+  background-color: #E67E22;
+  color: #ffffff;
+}
+
+a:active {
+  color: #C0392B;
+}
+
+/* Video Responsive Properties */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-style: italic;
+  color: #555555;
+  margin-top: 5px;
+}
+
+/* Old Price Styling with Line-Through */
+.old-price {
+  text-decoration: line-through;
+  color: #7f8c8d;
+  margin-right: 5px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  max-width: 450px;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+/* Footer Address Styling */
+footer address {
+  font-style: normal;
+  margin-top: 5px;
+}

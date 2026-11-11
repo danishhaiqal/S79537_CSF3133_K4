@@ -1,0 +1,133 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 11 Nov 2026, 4:01:17 pm
+    Author     : User
+*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333333;
+}
+
+h1 {
+  text-decoration: overline;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+a:link {
+  color: #0044cc;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #ff6600;
+}
+
+a:active {
+  color: #cc0000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #003366;
+  text-align: center;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #0055a5;
+  color: #ffffff;
+}
+
+#destinations, #video, #trip {
+  padding: 20px;
+  margin: 15px auto;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 1.1em;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888888;
+  margin-right: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+.caption {
+  font-style: italic;
+  color: #555555;
+  margin-top: 5px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.trip-form {
+  background-color: #eef2f5;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #66b2ff;
+}
