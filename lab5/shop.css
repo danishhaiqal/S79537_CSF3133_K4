@@ -1,0 +1,57 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 18 Nov 2026, 4:04:26 pm
+    Author     : User
+*/
+ body { 
+     font-family: 'Robotto', sans-serif; 
+     background-image: url("paper.gif"); 
+     background-repeat: no-repeat; /* Error 5: Missing '-' */
+     background-position: right top; /* Error 6: Misspelling background */
+ } 
+ ul { 
+     list-style-type: none; 
+     margin: 0; 
+     padding: 0; 
+     overflow: hidden; 
+     background-color: #333; 
+ } 
+ li { 
+     float: left; 
+ } 
+ li a { 
+     display: inline; 
+     color: white; 
+     padding: 14px 16px; 
+     text-decoration: none; 
+ } 
+ li a:hover { /* Error 7 : Wrong li:a */
+     background-color: #111; 
+ } 
+ #product { 
+     border-collapse: collapse; /* Error 8: Value and broder-collapse doesnt match */
+     width: 100%; 
+ } 
+ #product td, #product th {  /* Error 9: Misspelling product */
+     border: 1px solid #ddd; 
+     padding: 8px; 
+ } 
+ #product tr:nth-child(2) { /* Error 10: Misspelling product */
+     background-color: #f2f2f2; 
+ } 
+ #product tr:hover { /* Error 11 & 12: Misspelling hover */
+     background-color: #ddd; 
+ } 
+ #product th {  /* Error 13: Misspelling product */
+     background-color: #04AA6D; 
+     color: white; 
+ } 
+ footer { 
+     background-color: #f1f1f1; /* Error 14: Missing semicolon*/
+     text-align: center; 
+     padding: 10px; 
+ }
+
